@@ -379,6 +379,10 @@
   :root[data-fondo="bauhaus"] .scroll::-webkit-scrollbar { width: 8px; }
   :root[data-fondo="bauhaus"] .scroll::-webkit-scrollbar-track { background: transparent; }
   :root[data-fondo="bauhaus"] .scroll::-webkit-scrollbar-thumb { background: rgba(127, 127, 127, 0.55); border-radius: 8px; }
+  /* el botón del creador, en el oro de la bandera */
+  :root[data-fondo="bauhaus"] .firma a.creador { background: var(--f-oro); color: #1b1b1b; border-color: transparent;
+    font-weight: 600; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+  :root[data-fondo="bauhaus"] .firma a.creador:hover { background: #ffd83d; color: #000; }
   /* la firma de los colores: una raya finita arriba de todo, no una bandera */
   :root[data-fondo="bauhaus"] .app::before {
     content: ""; flex: none; height: 3px;
