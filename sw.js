@@ -2,9 +2,10 @@
    Así la app abre sin datos y cada pista escuchada queda disponible offline.
    Los nombres llevan el prefijo del idioma: dos apps en el mismo dominio no se pisan. */
 const SHELL = "aleman-shell-v1";
-const AUDIO = "aleman-audio-b7c1f8fe70";
+const AUDIO = "aleman-audio-f7944c1c98";
 const VIEJOS = /^$/;
-const BASICOS = ["./", "index.html", "manifest.webmanifest", "icono-192.png", "icono-512.png"];
+const BASICOS = ["./", "index.html", "manifest.webmanifest", "icono-192.png", "icono-512.png",
+                 "creador.html", "creador.jpg"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(SHELL).then((c) => c.addAll(BASICOS)).then(() => self.skipWaiting()));
